@@ -13,9 +13,6 @@
 		1959F296279B1F2A009C6BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1959F294279B1F2A009C6BC0 /* Main.storyboard */; };
 		1959F298279B1F2C009C6BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1959F297279B1F2C009C6BC0 /* Assets.xcassets */; };
 		1959F29B279B1F2C009C6BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1959F299279B1F2C009C6BC0 /* LaunchScreen.storyboard */; };
-		1959F2A6279B1F2C009C6BC0 /* RandomPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1959F2A5279B1F2C009C6BC0 /* RandomPhotoTests.swift */; };
-		1959F2B0279B1F2C009C6BC0 /* RandomPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1959F2AF279B1F2C009C6BC0 /* RandomPhotoUITests.swift */; };
-		1959F2B2279B1F2C009C6BC0 /* RandomPhotoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1959F2B1279B1F2C009C6BC0 /* RandomPhotoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		1959F29A279B1F2C009C6BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1959F29C279B1F2C009C6BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1959F2A1279B1F2C009C6BC0 /* RandomPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1959F2A5279B1F2C009C6BC0 /* RandomPhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoTests.swift; sourceTree = "<group>"; };
 		1959F2AB279B1F2C009C6BC0 /* RandomPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1959F2AF279B1F2C009C6BC0 /* RandomPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoUITests.swift; sourceTree = "<group>"; };
-		1959F2B1279B1F2C009C6BC0 /* RandomPhotoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				1959F28D279B1F2A009C6BC0 /* RandomPhoto */,
-				1959F2A4279B1F2C009C6BC0 /* RandomPhotoTests */,
-				1959F2AE279B1F2C009C6BC0 /* RandomPhotoUITests */,
 				1959F28C279B1F2A009C6BC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				1959F29C279B1F2C009C6BC0 /* Info.plist */,
 			);
 			path = RandomPhoto;
-			sourceTree = "<group>";
-		};
-		1959F2A4279B1F2C009C6BC0 /* RandomPhotoTests */ = {
-			isa = PBXGroup;
-			children = (
-				1959F2A5279B1F2C009C6BC0 /* RandomPhotoTests.swift */,
-			);
-			path = RandomPhotoTests;
-			sourceTree = "<group>";
-		};
-		1959F2AE279B1F2C009C6BC0 /* RandomPhotoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1959F2AF279B1F2C009C6BC0 /* RandomPhotoUITests.swift */,
-				1959F2B1279B1F2C009C6BC0 /* RandomPhotoUITestsLaunchTests.swift */,
-			);
-			path = RandomPhotoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1959F2A6279B1F2C009C6BC0 /* RandomPhotoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1959F2B2279B1F2C009C6BC0 /* RandomPhotoUITestsLaunchTests.swift in Sources */,
-				1959F2B0279B1F2C009C6BC0 /* RandomPhotoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NA7775Y77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RandomPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -451,7 +424,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = memo.com.RandomPhoto;
+				PRODUCT_BUNDLE_IDENTIFIER = io.takumh.RandomPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -466,6 +439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NA7775Y77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RandomPhoto/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,7 +452,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = memo.com.RandomPhoto;
+				PRODUCT_BUNDLE_IDENTIFIER = io.takumh.RandomPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
